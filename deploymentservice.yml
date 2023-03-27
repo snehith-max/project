@@ -29,8 +29,8 @@ metadata:
   name: nodeapp-service
 spec:
   selector:
-    app: NodePort 
-  type: nodeport
+    app: nodeport 
+  type: NodePort
   ports:
   - protocol: TCP
     port: 5000
