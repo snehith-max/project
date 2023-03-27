@@ -1,12 +1,14 @@
 FROM node:latest
 
-WORKDIR /usr/src/app
+# Create app directory
+WORKDIR /d/Documents/GitHub/snehith-max
 
-COPY package.json ./
+COPY package*.json ./
 
 RUN npm install
 
+EXPOSE 3000
+
 COPY . .
 
-EXPOSE 4000
-CMD [ "node", "index.js" ]
+CMD [ "node", "app.js" ]
