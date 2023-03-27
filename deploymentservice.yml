@@ -29,7 +29,7 @@ metadata:
   name: nodeapp-service
 spec:
   selector:
-    app: nodeapp 
+    app: NodePort 
   type: nodeport
   ports:
   - protocol: TCP
